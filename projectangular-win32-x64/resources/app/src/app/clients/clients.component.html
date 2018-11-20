@@ -1,0 +1,26 @@
+<div class="container">
+        <a href="addclient"><button class="primary"><h3>أضف حريف</h3></button></a>
+<table >
+        <thead >
+          <tr>
+            
+            <th scope="col" dir="rtl" >الإسم</th>
+            <th scope="col">العنوان</th>
+            <th scope="col">الهاتف</th>
+            <th scope="col">معلومات أخرى</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let client of clients | async">
+       
+          <td>{{ client.name}}</td>
+          <td>{{ client.adresse}}</td>
+          <td>{{ client.telephone}}</td>
+          <td>{{ client.otherinformations}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+   

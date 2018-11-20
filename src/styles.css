@@ -1,0 +1,79 @@
+/* Template-specific stuff
+ *
+ * Customizations just for the template; these are not necessary for anything
+ * with disabling the responsiveness.
+ */
+
+/* Account for fixed navbar */
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  
+  body,
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    min-width: 970px;
+  }
+  
+  /* Don't let the lead text change font-size. */
+  .lead {
+    font-size: 16px;
+  }
+  
+  /* Finesse the page header spacing */
+  .page-header {
+    margin-bottom: 30px;
+  }
+  .page-header .lead {
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Non-responsive overrides
+   *
+   * Utilize the following CSS to disable the responsive-ness of the container,
+   * grid system, and navbar.
+   */
+  
+  /* Reset the container */
+  .container {
+    width: 970px;
+    height: 600;
+    max-width: none !important;
+    vertical-align: middle;
+    padding-right: 5cm ;
+    
+    padding-top: 6px ;
+
+  }
+  .logout {
+    padding-left: 15cm ; 
+  }
+  /* Demonstrate the grids */
+  .col-xs-4 {
+    width: 6cm;
+    height: 4cm;
+      margin: 2em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(233, 170, 170);
+    border: 2px solid #ddd;
+    border: 4px solid rgba(86,61,124,.2);
+    float: left;
+  }
+  
+  h3{
+    text-align:center;
+    color:peru;
+    font: outline;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:24px;
+    padding-top: 22px;
+  }
+  .div-img{
+    margin: auto;
+    width: 150px;
+    height: 120px;
+    padding: 0px;
+  }

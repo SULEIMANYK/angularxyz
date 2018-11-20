@@ -1,0 +1,24 @@
+<div class="container">
+    <a href="addproduct"><button class="primary"><h3>أضف منتجا</h3></button></a>
+<table >
+    <thead >
+      <tr>
+        
+        <th scope="col" dir="rtl" >إسم المنتج</th>
+        <th scope="col">السعر</th>
+        <th scope="col">المعرف</th>
+        <th scope="col">معلومات أخرى</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let product of products | async">
+   
+      <td>{{ product.name}}</td>
+      <td>{{ product.price}}</td>
+      <td>{{ product.reference}}</td>
+      <td>{{ product.otherinformations}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

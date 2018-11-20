@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>أضف منتجا</h1>
+    <form (ngSubmit)="addproduct()" #clientform="ngForm">
+      <div class="form-group">
+        <label for="name">إسم المنتج</label>
+        <input type="text" class="form-control" id="name"  
+        [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="alterEgo">السعر</label>
+        <input type="text" class="form-control" id="price" [ngModelOptions]="{standalone: true}"  [(ngModel)]="product.price">
+      </div>
+      <div class="form-group">
+          <label for="alterEgo">المعرف </label>
+          <input type="text" class="form-control" id="telephone" [ngModelOptions]="{standalone: true}"  [(ngModel)]="product.ref">
+        </div>
+        <div class="form-group">
+            <label for="alterEgo">معلومات أخرى</label>
+            <input type="textarea" class="form-control" id="otherinformations" [ngModelOptions]="{standalone: true}"  [(ngModel)]="product.otherinformations">
+          </div>
+
+      <button  type="submit" class="btn btn-success" >إضافة</button>
+
+    </form>
+</div>
